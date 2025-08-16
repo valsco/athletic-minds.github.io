@@ -1,0 +1,263 @@
+{
+  "features": [
+    {
+      "id": "travel-tutoring",
+      "icon": "🏃‍♂️",
+      "title": "Travel Tutoring",
+      "description": "Our tutors accompany your team to training camps, competitions, and away games, ensuring continuous learning.",
+      "benefits": [
+        "No academic disruption during travel",
+        "Familiar tutor in unfamiliar environments",
+        "Flexible scheduling around events",
+        "Team and individual sessions available"
+      ]
+    },
+    {
+      "id": "flexible-scheduling",
+      "icon": "📅",
+      "title": "Flexible Scheduling",
+      "description": "Training at 5 AM? Practice until 10 PM? We adapt our tutoring schedule to fit your athletic commitments.",
+      "benefits": [
+        "24/7 availability for urgent needs",
+        "Sessions during travel time",
+        "Early morning and late evening options",
+        "Weekend and holiday availability"
+      ]
+    },
+    {
+      "id": "school-partnership",
+      "icon": "🏫",
+      "title": "School Partnership",
+      "description": "Trusted relationships with schools allow our tutors to proctor exams and serve as official academic liaisons.",
+      "benefits": [
+        "Official exam proctoring",
+        "Direct teacher communication",
+        "Assignment coordination",
+        "Grade monitoring and reporting"
+      ]
+    },
+    {
+      "id": "specialized-focus",
+      "icon": "🎯",
+      "title": "Specialized Focus",
+      "description": "We understand the unique challenges student athletes face and tailor our approach accordingly.",
+      "benefits": [
+        "Athletic-specific learning strategies",
+        "Time management for dual commitments",
+        "Stress management techniques",
+        "Goal-setting for academic success"
+      ]
+    },
+    {
+      "id": "all-subjects",
+      "icon": "📚",
+      "title": "All Subjects",
+      "description": "From math and science to literature and foreign languages, we cover all academic areas.",
+      "benefits": [
+        "STEM subjects (Math, Science, Engineering)",
+        "Humanities (English, History, Languages)",
+        "Test preparation (SAT, ACT, AP)",
+        "College and graduate school prep"
+      ]
+    },
+    {
+      "id": "group-individual",
+      "icon": "🤝",
+      "title": "Group & Individual",
+      "description": "Whether you need one-on-one attention or group study sessions, we've got you covered.",
+      "benefits": [
+        "Personalized individual attention",
+        "Team building through group study",
+        "Cost-effective group rates",
+        "Peer learning opportunities"
+      ]
+    }
+  ],
+  "detailed_services": [
+    {
+      "id": "travel-tutoring-detailed",
+      "title": "Travel Tutoring",
+      "subtitle": "Education That Goes Where You Go",
+      "description": "Our tutors accompany your team on training camps, tournaments, and competitions. We set up mobile learning environments wherever you are, ensuring your education never takes a back seat to your sport.",
+      "features": [
+        "On-site tutoring at training facilities",
+        "Hotel room study sessions",
+        "Transportation coordination",
+        "Equipment and materials provided",
+        "WiFi hotspot and tech support",
+        "Quiet study spaces arranged"
+      ],
+      "pricing": {
+        "daily_rate": "$300-500",
+        "includes": "8 hours of availability, materials, travel expenses within 50 miles",
+        "additional": "Longer distances and overnight stays quoted separately"
+      },
+      "ideal_for": [
+        "Training camps lasting 3+ days",
+        "Tournament travel",
+        "Spring break training trips",
+        "International competitions"
+      ]
+    },
+    {
+      "id": "exam-proctoring-detailed",
+      "title": "Exam Proctoring",
+      "subtitle": "Never Miss an Important Test",
+      "description": "Through our trusted partnerships with schools, our certified tutors can proctor official exams while you're away for competitions, ensuring you never miss important assessments.",
+      "features": [
+        "Official school exam administration",
+        "Secure testing environment setup",
+        "Direct communication with schools",
+        "Immediate score reporting",
+        "Make-up exam coordination",
+        "Academic integrity compliance"
+      ],
+      "pricing": {
+        "hourly_rate": "$75-100",
+        "includes": "Exam setup, proctoring, secure transmission of results",
+        "minimum": "2-hour minimum per session"
+      },
+      "requirements": [
+        "48-hour advance notice minimum",
+        "School partnership agreement",
+        "Secure location for testing",
+        "Valid photo ID required"
+      ]
+    },
+    {
+      "id": "flexible-scheduling-detailed",
+      "title": "Flexible Scheduling",
+      "subtitle": "Tutoring on Your Timeline",
+      "description": "Your training schedule is demanding and unpredictable. Our tutoring sessions adapt to your availability, whether that's early morning, late evening, or weekend sessions.",
+      "features": [
+        "24/7 scheduling availability",
+        "Multi-time zone coordination",
+        "Same-day rescheduling",
+        "Mobile app scheduling",
+        "Automated reminders"
+      ],
+      "availability": {
+        "standard_hours": "6:00 AM - 11:00 PM",
+        "response_time": "Within 1 hour during business hours",
+        "booking_window": "Up to 6 months in advance"
+      },
+      "pricing": {
+        "standard_rate": "Regular tutoring rates apply",
+        "rush_fee": "$25 for same-day booking",
+        "early_morning": "6:00-7:00 AM - No additional fee",
+        "late_evening": "After 10:00 PM - $15 surcharge"
+      }
+    },
+    {
+      "id": "academic-liaison-detailed",
+      "title": "Academic Liaison",
+      "subtitle": "Your Bridge to Academic Success",
+      "description": "We serve as the bridge between you and your school's academic staff, ensuring seamless communication about your progress, assignments, and any accommodations needed.",
+      "features": [
+        "Weekly teacher communication",
+        "Assignment coordination and tracking",
+        "Progress reporting to parents/coaches",
+        "Accommodation request assistance",
+        "Grade monitoring and alerts",
+        "Academic planning and advising"
+      ],
+      "communication": {
+        "frequency": "Weekly progress reports",
+        "methods": ["Email", "Phone", "Video conference", "In-person meetings"],
+        "stakeholders": ["Students", "Parents", "Teachers", "Coaches", "Academic advisors"]
+      },
+      "included_services": [
+        "Monthly progress reports",
+        "Quarterly academic planning sessions",
+        "Crisis intervention support",
+        "College planning assistance"
+      ]
+    },
+    {
+      "id": "group-study-detailed",
+      "title": "Group Study Programs",
+      "subtitle": "Team Learning for Team Success",
+      "description": "Perfect for teams traveling together. We organize group study sessions that build both academic knowledge and team camaraderie while maximizing learning efficiency.",
+      "features": [
+        "Team-based learning activities",
+        "Peer collaboration sessions",
+        "Group project coordination",
+        "Team building through academics",
+        "Study group facilitation",
+        "Academic competitions"
+      ],
+      "group_sizes": {
+        "small_group": "2-4 students - $40 per student per hour",
+        "medium_group": "5-8 students - $35 per student per hour",
+        "large_group": "9+ students - $30 per student per hour",
+        "team_rates": "Special rates for entire teams"
+      },
+      "benefits": [
+        "Cost savings compared to individual sessions",
+        "Peer learning and support",
+        "Team bonding opportunities",
+        "Shared study materials and resources"
+      ]
+    },
+    {
+      "id": "college-prep-detailed",
+      "title": "College Preparation",
+      "subtitle": "Your Path to Academic and Athletic Excellence",
+      "description": "Specialized programs for student athletes preparing for college admissions, including SAT/ACT prep, college essay writing, and scholarship application assistance.",
+      "features": [
+        "SAT/ACT test preparation",
+        "College essay guidance and editing",
+        "Scholarship application assistance",
+        "Athletic recruitment support",
+        "Interview preparation",
+        "Financial aid guidance"
+      ],
+      "test_prep": {
+        "sat_prep": "Comprehensive 20-hour program - $1,200",
+        "act_prep": "Comprehensive 20-hour program - $1,200",
+        "subject_tests": "8-hour focused sessions - $500",
+        "practice_tests": "Full-length practice tests with analysis"
+      },
+      "essay_services": {
+        "personal_statement": "5-session package - $400",
+        "supplemental_essays": "$50 per essay",
+        "scholarship_essays": "$75 per essay",
+        "editing_only": "$25 per essay"
+      },
+      "success_rate": {
+        "score_improvement": "Average 150+ point SAT improvement",
+        "admission_rate": "95% of students admitted to target schools",
+        "scholarship_success": "$2.3M in scholarships secured annually"
+      }
+    }
+  ],
+  "pricing": {
+    "individual_tutoring": {
+      "standard_rate": "$75-100 per hour",
+      "premium_subjects": "$85-120 per hour",
+      "travel_surcharge": "$25-50 depending on distance"
+    },
+    "group_tutoring": {
+      "small_group": "$40 per student per hour",
+      "large_group": "$30 per student per hour",
+      "team_packages": "Custom pricing available"
+    },
+    "specialized_services": {
+      "exam_proctoring": "$75-100 per session",
+      "travel_tutoring": "$300-500 per day",
+      "college_prep": "$50-75 per hour",
+      "test_prep": "$60-80 per hour"
+    },
+    "package_deals": {
+      "monthly_unlimited": "$800-1200 per month",
+      "semester_package": "$2400-3600 per semester",
+      "annual_program": "$4800-7200 per year"
+    }
+  },
+  "guarantees": [
+    "Grade improvement within 30 days or money back",
+    "100% satisfaction guarantee",
+    "Flexible rescheduling with no penalties",
+    "Qualified, background-checked tutors only"
+  ]
+}

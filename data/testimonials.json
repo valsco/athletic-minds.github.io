@@ -1,0 +1,158 @@
+{
+  "testimonials": [
+    {
+      "id": "sarah-swimmer",
+      "content": "Athletic Minds made it possible for me to maintain my 4.0 GPA while training for nationals. Their tutor traveled with our team and helped me stay on top of my calculus coursework even during the most intense training periods. The flexibility was incredible!",
+      "author": "Sarah M.",
+      "sport": "Division I Swimming",
+      "school": "University of Florida",
+      "subject": "Mathematics",
+      "tutor": "Dr. Michael Chen",
+      "image": "assets/images/testimonials/sarah-swimmer.jpg",
+      "rating": 5,
+      "date": "2024-11-15",
+      "achievement": "Maintained 4.0 GPA while qualifying for NCAA Championships"
+    },
+    {
+      "id": "dr-johnson-advisor",
+      "content": "The partnership between Athletic Minds and our school has been invaluable. Their tutors understand our students' unique needs and maintain excellent communication with our academic staff. We've seen remarkable improvements in our student athletes' academic performance.",
+      "author": "Dr. Lisa Johnson",
+      "title": "Academic Advisor",
+      "school": "University of Southern California",
+      "image": "assets/images/testimonials/dr-johnson.jpg",
+      "rating": 5,
+      "date": "2024-12-03",
+      "type": "school_official"
+    },
+    {
+      "id": "marcus-tennis",
+      "content": "I never thought I could balance pre-med requirements with competitive tennis. Athletic Minds proved me wrong. Their flexible scheduling and travel tutoring kept me on track for medical school. Dr. Rodriguez was a game-changer!",
+      "author": "Marcus R.",
+      "sport": "Division I Tennis",
+      "school": "Stanford University",
+      "subject": "Pre-Medical Studies",
+      "tutor": "Dr. James Rodriguez",
+      "image": "assets/images/testimonials/marcus-tennis.jpg",
+      "rating": 5,
+      "date": "2024-10-22",
+      "achievement": "Accepted to 3 top medical schools"
+    },
+    {
+      "id": "coach-martinez",
+      "content": "Athletic Minds has been a godsend for our team. When we travel for tournaments, having a tutor with us means our players never fall behind academically. The peace of mind for both players and parents is priceless.",
+      "author": "Coach Maria Martinez",
+      "title": "Head Basketball Coach",
+      "school": "Duke University",
+      "image": "assets/images/testimonials/coach-martinez.jpg",
+      "rating": 5,
+      "date": "2024-11-28",
+      "type": "coach"
+    },
+    {
+      "id": "jennifer-swimming",
+      "content": "Professor Williams transformed my writing from barely passing to award-winning. She traveled with us to training camp and helped me write my college essays between practice sessions. I got into every school I applied to!",
+      "author": "Jennifer L.",
+      "sport": "High School Swimming",
+      "school": "Phillips Exeter Academy",
+      "subject": "English Literature",
+      "tutor": "Prof. Sarah Williams",
+      "image": "assets/images/testimonials/jennifer-swimming.jpg",
+      "rating": 5,
+      "date": "2024-12-10",
+      "achievement": "Accepted to Harvard, Yale, and Princeton"
+    },
+    {
+      "id": "parent-testimonial",
+      "content": "As a parent of a student athlete, I was worried about my daughter's academics suffering due to her intense training schedule. Athletic Minds gave us the perfect solution - expert tutoring that works around her athletic commitments.",
+      "author": "Robert Thompson",
+      "title": "Parent of Division I Volleyball Player",
+      "school": "University of Nebraska",
+      "image": "assets/images/testimonials/parent-robert.jpg",
+      "rating": 5,
+      "date": "2024-11-05",
+      "type": "parent"
+    },
+    {
+      "id": "ashley-tennis-chemistry",
+      "content": "Dr. Rodriguez helped me ace organic chemistry while competing nationally. He made complex concepts so clear and always accommodated my tournament schedule. Without Athletic Minds, I never would have made it through pre-med.",
+      "author": "Ashley K.",
+      "sport": "Division I Tennis",
+      "school": "University of Miami",
+      "subject": "Organic Chemistry",
+      "tutor": "Dr. James Rodriguez",
+      "image": "assets/images/testimonials/ashley-tennis.jpg",
+      "rating": 5,
+      "date": "2024-09-18",
+      "achievement": "4.0 in pre-med courses, MCAT score 520"
+    },
+    {
+      "id": "team-testimonial",
+      "content": "Our entire baseball team works with Athletic Minds during spring training. Having tutors on-site during our training camp in Arizona meant we could focus on baseball without worrying about falling behind in classes.",
+      "author": "Jake M., Team Captain",
+      "sport": "Division I Baseball",
+      "school": "Arizona State University",
+      "subject": "Multiple subjects",
+      "image": "assets/images/testimonials/baseball-team.jpg",
+      "rating": 5,
+      "date": "2024-03-12",
+      "type": "team"
+    },
+    {
+      "id": "international-student",
+      "content": "As an international student athlete, I struggled with academic English while playing soccer. Ms. Foster not only helped improve my writing but also helped me understand American academic culture. My grades went from C's to A's!",
+      "author": "Carlos V.",
+      "sport": "Division I Soccer",
+      "school": "UCLA",
+      "subject": "English & Writing",
+      "tutor": "Ms. Emily Foster",
+      "image": "assets/images/testimonials/carlos-soccer.jpg",
+      "rating": 5,
+      "date": "2024-08-14",
+      "achievement": "GPA improved from 2.3 to 3.8"
+    },
+    {
+      "id": "graduate-student",
+      "content": "Balancing graduate coursework with competitive cycling seemed impossible until I found Athletic Minds. Dr. Chen's expertise in advanced mathematics and understanding of athletic schedules made all the difference in my thesis research.",
+      "author": "Dr. Amanda Foster",
+      "sport": "Professional Cycling",
+      "school": "MIT Graduate School",
+      "subject": "Applied Mathematics",
+      "tutor": "Dr. Michael Chen",
+      "image": "assets/images/testimonials/amanda-cycling.jpg",
+      "rating": 5,
+      "date": "2024-07-20",
+      "achievement": "Published thesis, qualified for Olympics"
+    },
+    {
+      "id": "high-school-success",
+      "content": "Athletic Minds helped me through my senior year while I was training for the Olympics. Their tutors made sure I graduated on time and with honors, despite missing months of school for training camps and competitions.",
+      "author": "Tyler J.",
+      "sport": "Olympic Swimming (Trials Qualifier)",
+      "school": "Newport Harbor High School",
+      "subject": "Multiple subjects",
+      "image": "assets/images/testimonials/tyler-swimming.jpg",
+      "rating": 5,
+      "date": "2024-06-15",
+      "achievement": "Graduated Valedictorian, Olympic Trials finalist"
+    },
+    {
+      "id": "academic-support-director",
+      "content": "We've partnered with Athletic Minds for three years now, and they consistently deliver exceptional academic support for our student athletes. Their tutors are not just subject experts but true partners in our students' success.",
+      "author": "Dr. Patricia Williams",
+      "title": "Director of Academic Support for Athletics",
+      "school": "University of North Carolina",
+      "image": "assets/images/testimonials/dr-williams.jpg",
+      "rating": 5,
+      "date": "2024-12-01",
+      "type": "school_official"
+    }
+  ],
+  "stats": {
+    "total_testimonials": 12,
+    "average_rating": 5.0,
+    "students_helped": 847,
+    "schools_partnered": 156,
+    "success_rate": 98.2,
+    "gpa_improvement_average": 1.3
+  }
+}
