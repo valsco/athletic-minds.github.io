@@ -198,10 +198,6 @@ function showSuccessMessage() {
                     </ul>
                 </div>
                 
-                <div class="immediate-help">
-                    <p><strong>Need immediate assistance?</strong></p>
-                    <p>Call our 24/7 hotline: <a href="tel:5559115887">(555) 911-STUDY</a></p>
-                </div>
             </div>
         `,
         actions: [
@@ -224,8 +220,7 @@ function showErrorMessage(message) {
                 <div class="alternative-contact">
                     <h4>Alternative Ways to Reach Us</h4>
                     <p>📞 Phone: <a href="tel:5551236463">(555) 123-MIND</a></p>
-                    <p>📧 Email: <a href="mailto:info@athleticminds.com">info@athleticminds.com</a></p>
-                    <p>💬 Text: <a href="sms:5551236463">(555) 123-MIND</a></p>
+                    <p>📧 Email: <a href="mailto:info@athleticmindstutoring.com">info@athleticmindstutoring.com</a></p>
                 </div>
             </div>
         `,
