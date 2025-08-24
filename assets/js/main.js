@@ -244,6 +244,7 @@ async function loadTutors() {
     }
 }
 
+
 function displayTutors() {
     const container = document.getElementById('tutors-container');
     if (!container) return;
@@ -290,6 +291,11 @@ function createTutorCard(tutor, index) {
                 
                 <div class="detailed-info">
                     <div class="info-section">
+                        <h4>Full Biography</h4>
+                        <p>${tutor.bio}</p>
+                    </div>
+                    
+                    <div class="info-section">
                         <h4>Experience & Education</h4>
                         <p><strong>Experience:</strong> ${tutor.experience}</p>
                         <div class="education-list">
@@ -298,6 +304,7 @@ function createTutorCard(tutor, index) {
                                 ${tutor.education.map(edu => `<li>${edu}</li>`).join('')}
                             </ul>
                         </div>
+                        <p><strong>Languages:</strong> ${tutor.languages.join(', ')}</p>
                     </div>
                     
                     <div class="info-section">
@@ -306,34 +313,53 @@ function createTutorCard(tutor, index) {
                     </div>
                     
                     <div class="info-section">
-                        <h4>Specialties</h4>
-                        <div class="specialties-tags">
-                            ${tutor.specialties.map(specialty => `<span class="specialty-tag">${specialty}</span>`).join('')}
+                        <h4>Subjects & Specialties</h4>
+                        <div class="subjects-grid">
+                            <div>
+                                <strong>Main Subjects:</strong>
+                                <div class="subjects-tags">
+                                    ${tutor.subjects.map(subject => `<span class="subject-tag">${subject}</span>`).join('')}
+                                </div>
+                            </div>
+                            <div>
+                                <strong>Specialties:</strong>
+                                <div class="specialties-tags">
+                                    ${tutor.specialties.map(specialty => `<span class="specialty-tag">${specialty}</span>`).join('')}
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="info-section">
-                        <h4>Rates & Availability</h4>
+                        <h4>Rates & Pricing</h4>
                         <div class="rates-grid">
                             <div class="rate-item">
-                                <span class="rate-type">Individual:</span>
-                                <span class="rate-price">$${tutor.rates.individual}/hr</span>
+                                <span class="rate-type">Individual Sessions:</span>
+                                <span class="rate-price">${tutor.rates.individual}/hour</span>
                             </div>
                             <div class="rate-item">
-                                <span class="rate-type">Group:</span>
-                                <span class="rate-price">$${tutor.rates.group}/hr</span>
+                                <span class="rate-type">Group Sessions:</span>
+                                <span class="rate-price">${tutor.rates.group}/hour</span>
                             </div>
                             <div class="rate-item">
-                                <span class="rate-type">Travel:</span>
-                                <span class="rate-price">$${tutor.rates.travel}/hr</span>
+                                <span class="rate-type">Travel Sessions:</span>
+                                <span class="rate-price">${tutor.rates.travel}/hour</span>
                             </div>
                         </div>
-                        <div class="availability-info">
-                            <p><strong>Timezone:</strong> ${tutor.availability.timezone}</p>
-                            <p><strong>Hours:</strong> ${tutor.availability.preferred_hours}</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Availability & Scheduling</h4>
+                        <div class="availability-details">
+                            <div class="availability-item">
+                                <strong>Timezone:</strong> ${tutor.availability.timezone}
+                            </div>
+                            <div class="availability-item">
+                                <strong>Preferred Hours:</strong> ${tutor.availability.preferred_hours}
+                            </div>
                             <div class="availability-badges">
-                                ${tutor.availability.online_sessions ? '<span class="badge online">Online Sessions</span>' : ''}
-                                ${tutor.availability.travel_available ? '<span class="badge travel">Travel Available</span>' : ''}
+                                ${tutor.availability.online_sessions ? '<span class="badge online">✓ Online Sessions Available</span>' : ''}
+                                ${tutor.availability.travel_available ? '<span class="badge travel">✓ Travel Available</span>' : ''}
                             </div>
                         </div>
                     </div>
@@ -343,14 +369,22 @@ function createTutorCard(tutor, index) {
                         <h4>Student Testimonials</h4>
                         <div class="testimonials">
                             ${tutor.testimonials.map(testimonial => `
-                                <blockquote>
-                                    "${testimonial.quote}"
-                                    <cite>- ${testimonial.student}</cite>
+                                <blockquote class="testimonial">
+                                    <div class="quote-content">"${testimonial.quote}"</div>
+                                    <cite>— ${testimonial.student}</cite>
                                 </blockquote>
                             `).join('')}
                         </div>
                     </div>
                     ` : ''}
+                    
+                    <div class="info-section">
+                        <h4>Contact Information</h4>
+                        <div class="contact-info">
+                            <p><strong>Email:</strong> ${tutor.calendarId}</p>
+                            <p><em>Click "Book Session" below to schedule your appointment</em></p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="back-actions">
@@ -367,14 +401,43 @@ function createTutorCard(tutor, index) {
 
 // Card flip functionality
 function flipCard(tutorId, flipBack = false) {
-    const card = document.getElementById(`card-${tutorId}`);
-    if (!card) return;
+    const cardContainer = document.querySelector(`#card-${tutorId}`).parentElement;
+    const overlay = document.getElementById('card-overlay') || createOverlay();
     
     if (flipBack) {
-        card.classList.remove('flipped');
+        cardContainer.classList.remove('expanded');
+        document.getElementById(`card-${tutorId}`).classList.remove('flipped');
+        overlay.classList.remove('active');
+        document.body.classList.remove('modal-open');
     } else {
-        card.classList.add('flipped');
+        cardContainer.classList.add('expanded');
+        document.getElementById(`card-${tutorId}`).classList.add('flipped');
+        overlay.classList.add('active');
+        document.body.classList.add('modal-open');
     }
+}
+
+// Create overlay for expanded cards
+function createOverlay() {
+    const overlay = document.createElement('div');
+    overlay.id = 'card-overlay';
+    overlay.className = 'card-overlay';
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closeAllExpandedCards();
+        }
+    });
+    document.body.appendChild(overlay);
+    return overlay;
+}
+
+// Close all expanded cards
+function closeAllExpandedCards() {
+    const expandedCards = document.querySelectorAll('.tutor-card-container.expanded');
+    expandedCards.forEach(container => {
+        const tutorId = container.querySelector('.tutor-card').id.replace('card-', '');
+        flipCard(tutorId, true);
+    });
 }
 
 // Existing book session function (assuming it exists elsewhere)
@@ -383,6 +446,147 @@ function bookSession(tutorId) {
     console.log(`Booking session with tutor: ${tutorId}`);
     // You can implement your booking modal or redirect logic here
 }
+
+
+// function displayTutors() {
+//     const container = document.getElementById('tutors-container');
+//     if (!container) return;
+    
+//     container.innerHTML = '';
+    
+//     tutorsData.forEach((tutor, index) => {
+//         const tutorCard = createTutorCard(tutor, index);
+//         container.appendChild(tutorCard);
+//     });
+// }
+
+// function createTutorCard(tutor, index) {
+//     const card = document.createElement('div');
+//     card.className = `tutor-card-container hover-lift animate-fade-in animate-delay-${(index % 4) + 1}`;
+    
+//     card.innerHTML = `
+//         <div class="tutor-card" id="card-${tutor.id}">
+//             <div class="card-front">
+//                 <div class="tutor-image">
+//                     <img src="${tutor.image}" alt="${tutor.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\\"tutor-emoji\\">${tutor.emoji}</span>';">
+//                 </div>
+//                 <div class="tutor-info">
+//                     <div class="tutor-name">${tutor.name}</div>
+//                     <div class="tutor-title">${tutor.title || ''}</div>
+//                     <div class="tutor-subjects">${tutor.subjects.join(' • ')}</div>
+//                     <p class="tutor-bio-preview">${tutor.bio.substring(0, 100)}${tutor.bio.length > 100 ? '...' : ''}</p>
+//                     <button class="view-details-button button-ripple" onclick="flipCard('${tutor.id}')">
+//                         View Details
+//                     </button>
+//                     <button class="book-button button-ripple" onclick="bookSession('${tutor.id}')">
+//                         Book Session
+//                     </button>
+//                 </div>
+//             </div>
+            
+//             <div class="card-back">
+//                 <div class="back-header">
+//                     <button class="back-button" onclick="flipCard('${tutor.id}', true)">
+//                         ← Back
+//                     </button>
+//                     <h3>${tutor.name}</h3>
+//                 </div>
+                
+//                 <div class="detailed-info">
+//                     <div class="info-section">
+//                         <h4>Experience & Education</h4>
+//                         <p><strong>Experience:</strong> ${tutor.experience}</p>
+//                         <div class="education-list">
+//                             <strong>Education:</strong>
+//                             <ul>
+//                                 ${tutor.education.map(edu => `<li>${edu}</li>`).join('')}
+//                             </ul>
+//                         </div>
+//                     </div>
+                    
+//                     <div class="info-section">
+//                         <h4>Athletic Background</h4>
+//                         <p>${tutor.athletic_background}</p>
+//                     </div>
+                    
+//                     <div class="info-section">
+//                         <h4>Specialties</h4>
+//                         <div class="specialties-tags">
+//                             ${tutor.specialties.map(specialty => `<span class="specialty-tag">${specialty}</span>`).join('')}
+//                         </div>
+//                     </div>
+                    
+//                     <div class="info-section">
+//                         <h4>Rates & Availability</h4>
+//                         <div class="rates-grid">
+//                             <div class="rate-item">
+//                                 <span class="rate-type">Individual:</span>
+//                                 <span class="rate-price">$${tutor.rates.individual}/hr</span>
+//                             </div>
+//                             <div class="rate-item">
+//                                 <span class="rate-type">Group:</span>
+//                                 <span class="rate-price">$${tutor.rates.group}/hr</span>
+//                             </div>
+//                             <div class="rate-item">
+//                                 <span class="rate-type">Travel:</span>
+//                                 <span class="rate-price">$${tutor.rates.travel}/hr</span>
+//                             </div>
+//                         </div>
+//                         <div class="availability-info">
+//                             <p><strong>Timezone:</strong> ${tutor.availability.timezone}</p>
+//                             <p><strong>Hours:</strong> ${tutor.availability.preferred_hours}</p>
+//                             <div class="availability-badges">
+//                                 ${tutor.availability.online_sessions ? '<span class="badge online">Online Sessions</span>' : ''}
+//                                 ${tutor.availability.travel_available ? '<span class="badge travel">Travel Available</span>' : ''}
+//                             </div>
+//                         </div>
+//                     </div>
+                    
+//                     ${tutor.testimonials && tutor.testimonials.length > 0 ? `
+//                     <div class="info-section">
+//                         <h4>Student Testimonials</h4>
+//                         <div class="testimonials">
+//                             ${tutor.testimonials.map(testimonial => `
+//                                 <blockquote>
+//                                     "${testimonial.quote}"
+//                                     <cite>- ${testimonial.student}</cite>
+//                                 </blockquote>
+//                             `).join('')}
+//                         </div>
+//                     </div>
+//                     ` : ''}
+//                 </div>
+                
+//                 <div class="back-actions">
+//                     <button class="book-button-large button-ripple" onclick="bookSession('${tutor.id}')">
+//                         Book Session with ${tutor.name.split(' ')[0]}
+//                     </button>
+//                 </div>
+//             </div>
+//         </div>
+//     `;
+    
+//     return card;
+// }
+
+// // Card flip functionality
+// function flipCard(tutorId, flipBack = false) {
+//     const card = document.getElementById(`card-${tutorId}`);
+//     if (!card) return;
+    
+//     if (flipBack) {
+//         card.classList.remove('flipped');
+//     } else {
+//         card.classList.add('flipped');
+//     }
+// }
+
+// // Existing book session function (assuming it exists elsewhere)
+// function bookSession(tutorId) {
+//     // Your existing booking logic here
+//     console.log(`Booking session with tutor: ${tutorId}`);
+//     // You can implement your booking modal or redirect logic here
+// }
 
 async function loadTestimonials() {
     try {
