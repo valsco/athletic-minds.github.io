@@ -125,59 +125,122 @@ function closeMobileMenu() {
     navLinks?.classList.remove('active');
 }
 
-// Dynamic content loading functions
+// // Dynamic content loading functions
+// async function loadTutors() {
+//     try {
+//         // For now, use static data. Replace with actual fetch when data/tutors.json is available
+//         tutorsData = [
+//             {
+//                 id: 'Couch',
+//                 name: 'Matthew Couture',
+//                 subjects: ['Mathematics', 'Physics', 'Chemistry', "Biology"],
+//                 bio: 'Former Division III skier with BS in Applied Mathematics & Physics. Specializes in STEM subjects for student athletes.',
+//                 image: 'assets/images/tutors/cooch.jpg',
+//                 // emoji: '👨‍🏫',
+//                 focus: "50% 20%",
+//                 calendarId: 'mcooucher@athleticmindstutoring.com'
+//             },
+//             // {
+//             //     id: 'prof-williams',
+//             //     name: 'Prof. Sarah Williams',
+//             //     subjects: ['English', 'Literature', 'Writing'],
+//             //     bio: 'Former college volleyball player, now English Professor. Expert in helping athletes develop strong writing and communication skills.',
+//             //     image: 'assets/images/tutors/prof-sarah-williams.jpg',
+//             //     emoji: '👩‍🏫',
+//             //     calendarId: 'prof.williams@athleticminds.com'
+//             // },
+//             // {
+//             //     id: 'dr-rodriguez',
+//             //     name: 'Dr. James Rodriguez',
+//             //     subjects: ['Biology', 'Chemistry', 'Pre-Med'],
+//             //     bio: 'Former soccer player turned physician. Guides pre-med student athletes through challenging science coursework.',
+//             //     image: 'assets/images/tutors/dr-james-rodriguez.jpg',
+//             //     emoji: '👨‍🏫',
+//             //     calendarId: 'dr.rodriguez@athleticminds.com'
+//             // },
+//             // {
+//             //     id: 'ms-foster',
+//             //     name: 'Ms. Emily Foster',
+//             //     subjects: ['History', 'Social Studies', 'Psychology'],
+//             //     bio: 'Former swimming champion with Master\'s in Psychology. Specializes in helping athletes understand human behavior and historical contexts.',
+//             //     image: 'assets/images/tutors/ms-emily-foster.jpg',
+//             //     emoji: '👩‍🏫',
+//             //     calendarId: 'ms.foster@athleticminds.com'
+//             // }
+//         ];
+        
+//         displayTutors();
+        
+//         // Uncomment this when you have the JSON file:
+//         // const response = await fetch('data/tutors.json');
+//         // tutorsData = await response.json();
+//         // displayTutors();
+        
+//     } catch (error) {
+//         console.error('Error loading tutors:', error);
+//         displayTutorsError();
+//     }
+// }
+
+
+// // export async function loadTutors() {
+// //   try {
+// //     const res = await fetch('/data/tutors.json');   // leading slash = public root
+// //     if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+// //     tutorsData = await res.json();
+// //     displayTutors();                                // your render helper
+// //   } catch (err) {
+// //     console.error('Error loading tutors:', err);
+// //     displayTutorsError();                           // graceful fallback
+// //   }
+// // }
+
+
+// function displayTutors() {
+//     const container = document.getElementById('tutors-container');
+//     if (!container) return;
+    
+//     container.innerHTML = '';
+    
+//     tutorsData.forEach((tutor, index) => {
+//         const tutorCard = createTutorCard(tutor, index);
+//         container.appendChild(tutorCard);
+//     });
+// }
+
+// function createTutorCard(tutor, index) {
+//     const card = document.createElement('div');
+//     card.className = `tutor-card hover-lift animate-fade-in animate-delay-${(index % 4) + 1}`;
+    
+//     card.innerHTML = `
+//         <div class="tutor-image">
+//             <img src="${tutor.image}" alt="${tutor.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='${tutor.emoji}';">
+//         </div>
+//         <div class="tutor-info">
+//             <div class="tutor-name">${tutor.name}</div>
+//             <div class="tutor-subjects">${tutor.subjects.join(' • ')}</div>
+//             <p>${tutor.bio}</p>
+//             <button class="book-button button-ripple" onclick="bookSession('${tutor.id}')">Book Session</button>
+//         </div>
+//     `;
+    
+//     return card;
+// }
+
+
+
 async function loadTutors() {
     try {
-        // For now, use static data. Replace with actual fetch when data/tutors.json is available
-        tutorsData = [
-            {
-                id: 'dr-chen',
-                name: 'Dr. Michael Chen',
-                subjects: ['Mathematics', 'Physics', 'Engineering'],
-                bio: 'Former Division I track athlete with PhD in Applied Mathematics. Specializes in STEM subjects for student athletes.',
-                image: 'assets/images/tutors/dr-michael-chen.jpg',
-                emoji: '👨‍🏫',
-                calendarId: 'dr.chen@athleticminds.com'
-            },
-            {
-                id: 'prof-williams',
-                name: 'Prof. Sarah Williams',
-                subjects: ['English', 'Literature', 'Writing'],
-                bio: 'Former college volleyball player, now English Professor. Expert in helping athletes develop strong writing and communication skills.',
-                image: 'assets/images/tutors/prof-sarah-williams.jpg',
-                emoji: '👩‍🏫',
-                calendarId: 'prof.williams@athleticminds.com'
-            },
-            {
-                id: 'dr-rodriguez',
-                name: 'Dr. James Rodriguez',
-                subjects: ['Biology', 'Chemistry', 'Pre-Med'],
-                bio: 'Former soccer player turned physician. Guides pre-med student athletes through challenging science coursework.',
-                image: 'assets/images/tutors/dr-james-rodriguez.jpg',
-                emoji: '👨‍🏫',
-                calendarId: 'dr.rodriguez@athleticminds.com'
-            },
-            {
-                id: 'ms-foster',
-                name: 'Ms. Emily Foster',
-                subjects: ['History', 'Social Studies', 'Psychology'],
-                bio: 'Former swimming champion with Master\'s in Psychology. Specializes in helping athletes understand human behavior and historical contexts.',
-                image: 'assets/images/tutors/ms-emily-foster.jpg',
-                emoji: '👩‍🏫',
-                calendarId: 'ms.foster@athleticminds.com'
-            }
-        ];
-        
+        const response = await fetch('data/tutors.json');
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        const data = await response.json();
+        tutorsData = data.tutors; // Access the tutors array from the JSON structure
         displayTutors();
-        
-        // Uncomment this when you have the JSON file:
-        // const response = await fetch('data/tutors.json');
-        // tutorsData = await response.json();
-        // displayTutors();
-        
     } catch (error) {
         console.error('Error loading tutors:', error);
-        displayTutorsError();
     }
 }
 
@@ -195,21 +258,130 @@ function displayTutors() {
 
 function createTutorCard(tutor, index) {
     const card = document.createElement('div');
-    card.className = `tutor-card hover-lift animate-fade-in animate-delay-${(index % 4) + 1}`;
+    card.className = `tutor-card-container hover-lift animate-fade-in animate-delay-${(index % 4) + 1}`;
     
     card.innerHTML = `
-        <div class="tutor-image">
-            <img src="${tutor.image}" alt="${tutor.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='${tutor.emoji}';">
-        </div>
-        <div class="tutor-info">
-            <div class="tutor-name">${tutor.name}</div>
-            <div class="tutor-subjects">${tutor.subjects.join(' • ')}</div>
-            <p>${tutor.bio}</p>
-            <button class="book-button button-ripple" onclick="bookSession('${tutor.id}')">Book Session</button>
+        <div class="tutor-card" id="card-${tutor.id}">
+            <div class="card-front">
+                <div class="tutor-image">
+                    <img src="${tutor.image}" alt="${tutor.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\\"tutor-emoji\\">${tutor.emoji}</span>';">
+                </div>
+                <div class="tutor-info">
+                    <div class="tutor-name">${tutor.name}</div>
+                    <div class="tutor-title">${tutor.title || ''}</div>
+                    <div class="tutor-subjects">${tutor.subjects.join(' • ')}</div>
+                    <p class="tutor-bio-preview">${tutor.bio.substring(0, 100)}${tutor.bio.length > 100 ? '...' : ''}</p>
+                    <button class="view-details-button button-ripple" onclick="flipCard('${tutor.id}')">
+                        View Details
+                    </button>
+                    <button class="book-button button-ripple" onclick="bookSession('${tutor.id}')">
+                        Book Session
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card-back">
+                <div class="back-header">
+                    <button class="back-button" onclick="flipCard('${tutor.id}', true)">
+                        ← Back
+                    </button>
+                    <h3>${tutor.name}</h3>
+                </div>
+                
+                <div class="detailed-info">
+                    <div class="info-section">
+                        <h4>Experience & Education</h4>
+                        <p><strong>Experience:</strong> ${tutor.experience}</p>
+                        <div class="education-list">
+                            <strong>Education:</strong>
+                            <ul>
+                                ${tutor.education.map(edu => `<li>${edu}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Athletic Background</h4>
+                        <p>${tutor.athletic_background}</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Specialties</h4>
+                        <div class="specialties-tags">
+                            ${tutor.specialties.map(specialty => `<span class="specialty-tag">${specialty}</span>`).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Rates & Availability</h4>
+                        <div class="rates-grid">
+                            <div class="rate-item">
+                                <span class="rate-type">Individual:</span>
+                                <span class="rate-price">$${tutor.rates.individual}/hr</span>
+                            </div>
+                            <div class="rate-item">
+                                <span class="rate-type">Group:</span>
+                                <span class="rate-price">$${tutor.rates.group}/hr</span>
+                            </div>
+                            <div class="rate-item">
+                                <span class="rate-type">Travel:</span>
+                                <span class="rate-price">$${tutor.rates.travel}/hr</span>
+                            </div>
+                        </div>
+                        <div class="availability-info">
+                            <p><strong>Timezone:</strong> ${tutor.availability.timezone}</p>
+                            <p><strong>Hours:</strong> ${tutor.availability.preferred_hours}</p>
+                            <div class="availability-badges">
+                                ${tutor.availability.online_sessions ? '<span class="badge online">Online Sessions</span>' : ''}
+                                ${tutor.availability.travel_available ? '<span class="badge travel">Travel Available</span>' : ''}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    ${tutor.testimonials && tutor.testimonials.length > 0 ? `
+                    <div class="info-section">
+                        <h4>Student Testimonials</h4>
+                        <div class="testimonials">
+                            ${tutor.testimonials.map(testimonial => `
+                                <blockquote>
+                                    "${testimonial.quote}"
+                                    <cite>- ${testimonial.student}</cite>
+                                </blockquote>
+                            `).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
+                </div>
+                
+                <div class="back-actions">
+                    <button class="book-button-large button-ripple" onclick="bookSession('${tutor.id}')">
+                        Book Session with ${tutor.name.split(' ')[0]}
+                    </button>
+                </div>
+            </div>
         </div>
     `;
     
     return card;
+}
+
+// Card flip functionality
+function flipCard(tutorId, flipBack = false) {
+    const card = document.getElementById(`card-${tutorId}`);
+    if (!card) return;
+    
+    if (flipBack) {
+        card.classList.remove('flipped');
+    } else {
+        card.classList.add('flipped');
+    }
+}
+
+// Existing book session function (assuming it exists elsewhere)
+function bookSession(tutorId) {
+    // Your existing booking logic here
+    console.log(`Booking session with tutor: ${tutorId}`);
+    // You can implement your booking modal or redirect logic here
 }
 
 async function loadTestimonials() {
@@ -270,7 +442,7 @@ async function loadServices() {
         servicesData = {
             features: [
                 {
-                    icon: '🏃‍♂️',
+                    icon: '🚐💨',
                     title: 'Travel Tutoring',
                     description: 'Our tutors accompany your team to training camps, competitions, and away games, ensuring continuous learning.'
                 },
@@ -289,16 +461,16 @@ async function loadServices() {
                     title: 'Specialized Focus',
                     description: 'We understand the unique challenges student athletes face and tailor our approach accordingly.'
                 },
-                {
-                    icon: '📚',
-                    title: 'All Subjects',
-                    description: 'From math and science to literature and foreign languages, we cover all academic areas.'
-                },
-                {
-                    icon: '🤝',
-                    title: 'Group & Individual',
-                    description: 'Whether you need one-on-one attention or group study sessions, we\'ve got you covered.'
-                }
+                // {
+                //     icon: '📚',
+                //     title: 'All Subjects',
+                //     description: 'From math and science to literature and foreign languages, we cover all academic areas.'
+                // },
+                // {
+                //     icon: '🤝',
+                //     title: 'Group & Individual',
+                //     description: 'Whether you need one-on-one attention or group study sessions, we\'ve got you covered.'
+                // }
             ],
             detailedServices: [
                 {

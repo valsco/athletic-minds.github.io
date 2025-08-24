@@ -1,22 +1,20 @@
 {
   "tutors": [
     {
-      "id": "dr-chen",
-      "name": "Dr. Michael Chen",
-      "title": "PhD in Applied Mathematics",
-      "subjects": ["Mathematics", "Physics", "Engineering"],
+      "id": "Matt-couch",
+      "name": "Matthew Couture",
+      "title": "B.S. in Applied Mathematics & Physics",
+      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology"],
       "specialties": ["Calculus", "Statistics", "Applied Physics", "Engineering Mechanics"],
-      "bio": "Former Division I track athlete with PhD in Applied Mathematics. Specializes in STEM subjects for student athletes. Dr. Chen understands the demanding schedule of competitive athletics and has developed unique teaching methods that work around training schedules.",
+      "bio": "Former Division III track athlete with PhD in Applied Mathematics. Specializes in STEM subjects for student athletes. Dr. Chen understands the demanding schedule of competitive athletics and has developed unique teaching methods that work around training schedules.",
       "experience": "12 years",
       "education": [
-        "PhD Applied Mathematics - Stanford University",
-        "MS Physics - MIT",
-        "BS Mathematics - UC Berkeley"
+        "BS Physics - Westminster University",
+        "BS Mathematics -Castleton "
       ],
       "athletic_background": "Division I Track & Field (400m hurdles)",
-      "image": "assets/images/tutors/dr-michael-chen.jpg",
-      "emoji": "👨‍🏫",
-      "calendarId": "dr.chen@athleticminds.com",
+      "image": "assets/images/tutors/cooch.jpg",
+      "calendarId": "mcoucher@athleticminds.com",
       "availability": {
         "timezone": "EST",
         "preferred_hours": "6:00-22:00",
@@ -28,191 +26,11 @@
         "group": 120,
         "travel": 150
       },
-      "languages": ["English", "Mandarin"],
-      "testimonials": [
-        {
-          "student": "Jennifer L., Swimming",
-          "quote": "Dr. Chen helped me master calculus while training 6 hours a day. His flexible scheduling saved my GPA!"
-        }
-      ]
-    },
-    {
-      "id": "prof-williams",
-      "name": "Prof. Sarah Williams",
-      "title": "English Literature Professor",
-      "subjects": ["English", "Literature", "Writing"],
-      "specialties": ["Academic Writing", "Literary Analysis", "College Essays", "AP English"],
-      "bio": "Former college volleyball player, now English Professor. Expert in helping athletes develop strong writing and communication skills. Prof. Williams has a special talent for making literature relevant to student athletes' experiences.",
-      "experience": "15 years",
-      "education": [
-        "PhD English Literature - Yale University",
-        "MA Creative Writing - Columbia University",
-        "BA English - University of North Carolina"
-      ],
-      "athletic_background": "Division I Volleyball (Outside Hitter)",
-      "image": "assets/images/tutors/prof-sarah-williams.jpg",
-      "emoji": "👩‍🏫",
-      "calendarId": "prof.williams@athleticminds.com",
-      "availability": {
-        "timezone": "CST",
-        "preferred_hours": "7:00-21:00",
-        "travel_available": true,
-        "online_sessions": true
-      },
-      "rates": {
-        "individual": 80,
-        "group": 115,
-        "travel": 140
-      },
-      "languages": ["English", "Spanish"],
-      "testimonials": [
-        {
-          "student": "Marcus T., Basketball",
-          "quote": "Professor Williams turned me from hating writing to loving it. My college essays got me into my dream school!"
-        }
-      ]
-    },
-    {
-      "id": "dr-rodriguez",
-      "name": "Dr. James Rodriguez",
-      "title": "MD, Internal Medicine",
-      "subjects": ["Biology", "Chemistry", "Pre-Med"],
-      "specialties": ["Organic Chemistry", "Anatomy", "MCAT Prep", "Medical School Applications"],
-      "bio": "Former soccer player turned physician. Guides pre-med student athletes through challenging science coursework. Dr. Rodriguez provides invaluable insight into balancing athletic and pre-medical requirements.",
-      "experience": "10 years",
-      "education": [
-        "MD - Harvard Medical School",
-        "BS Biology - University of California, Los Angeles",
-        "Pre-med Certificate - Johns Hopkins"
-      ],
-      "athletic_background": "Division I Soccer (Midfielder)",
-      "image": "assets/images/tutors/dr-james-rodriguez.jpg",
-      "emoji": "👨‍🏫",
-      "calendarId": "dr.rodriguez@athleticminds.com",
-      "availability": {
-        "timezone": "PST",
-        "preferred_hours": "6:00-20:00",
-        "travel_available": true,
-        "online_sessions": true
-      },
-      "rates": {
-        "individual": 95,
-        "group": 130,
-        "travel": 160
-      },
-      "languages": ["English", "Spanish", "Portuguese"],
-      "testimonials": [
-        {
-          "student": "Ashley K., Tennis",
-          "quote": "Dr. Rodriguez helped me ace organic chemistry while competing nationally. He made complex concepts so clear!"
-        }
-      ]
-    },
-    {
-      "id": "ms-foster",
-      "name": "Ms. Emily Foster",
-      "title": "MS Psychology",
-      "subjects": ["History", "Social Studies", "Psychology"],
-      "specialties": ["AP History", "Social Psychology", "Research Methods", "College Prep"],
-      "bio": "Former swimming champion with Master's in Psychology. Specializes in helping athletes understand human behavior and historical contexts. Ms. Foster excels at connecting historical events to modern athletic and social issues.",
-      "experience": "8 years",
-      "education": [
-        "MS Psychology - University of Michigan",
-        "BA History - Northwestern University",
-        "Certificate in Sports Psychology"
-      ],
-      "athletic_background": "Division I Swimming (Butterfly, Individual Medley)",
-      "image": "assets/images/tutors/ms-emily-foster.jpg",
-      "emoji": "👩‍🏫",
-      "calendarId": "ms.foster@athleticminds.com",
-      "availability": {
-        "timezone": "EST",
-        "preferred_hours": "8:00-22:00",
-        "travel_available": true,
-        "online_sessions": true
-      },
-      "rates": {
-        "individual": 75,
-        "group": 105,
-        "travel": 130
-      },
-      "languages": ["English", "French"],
-      "testimonials": [
-        {
-          "student": "David M., Wrestling",
-          "quote": "Ms. Foster made history come alive! Her sports psychology insights helped both my academics and my performance."
-        }
-      ]
-    },
-    {
-      "id": "prof-thompson",
-      "name": "Prof. David Thompson",
-      "title": "PhD Economics",
-      "subjects": ["Economics", "Business", "Statistics"],
-      "specialties": ["Microeconomics", "Sports Economics", "Business Analytics", "Finance"],
-      "bio": "Former baseball player with expertise in economics and business. Specializes in sports economics and helps student athletes understand the business side of sports while mastering complex economic concepts.",
-      "experience": "14 years",
-      "education": [
-        "PhD Economics - University of Chicago",
-        "MBA - Wharton School",
-        "BA Economics - Duke University"
-      ],
-      "athletic_background": "Division I Baseball (Pitcher)",
-      "image": "assets/images/tutors/prof-david-thompson.jpg",
-      "emoji": "👨‍💼",
-      "calendarId": "prof.thompson@athleticminds.com",
-      "availability": {
-        "timezone": "EST",
-        "preferred_hours": "9:00-21:00",
-        "travel_available": false,
-        "online_sessions": true
-      },
-      "rates": {
-        "individual": 90,
-        "group": 125,
-        "travel": 0
-      },
       "languages": ["English"],
       "testimonials": [
         {
-          "student": "Taylor S., Golf",
-          "quote": "Professor Thompson taught me economics through sports examples. Now I understand both the game and the business!"
-        }
-      ]
-    },
-    {
-      "id": "dr-patel",
-      "name": "Dr. Priya Patel",
-      "title": "PhD Computer Science",
-      "subjects": ["Computer Science", "Mathematics", "Data Science"],
-      "specialties": ["Programming", "Data Analytics", "Sports Technology", "Algorithm Design"],
-      "bio": "Former track and field athlete turned tech expert. Specializes in computer science and data analytics, with a focus on sports technology applications. Dr. Patel helps student athletes see the intersection of technology and athletics.",
-      "experience": "9 years",
-      "education": [
-        "PhD Computer Science - Carnegie Mellon",
-        "MS Data Science - Stanford University",
-        "BS Computer Engineering - Georgia Tech"
-      ],
-      "athletic_background": "Division I Track & Field (Long Jump, Heptathlon)",
-      "image": "assets/images/tutors/dr-priya-patel.jpg",
-      "emoji": "👩‍💻",
-      "calendarId": "dr.patel@athleticminds.com",
-      "availability": {
-        "timezone": "PST",
-        "preferred_hours": "10:00-23:00",
-        "travel_available": true,
-        "online_sessions": true
-      },
-      "rates": {
-        "individual": 100,
-        "group": 140,
-        "travel": 170
-      },
-      "languages": ["English", "Hindi", "Gujarati"],
-      "testimonials": [
-        {
-          "student": "Alex R., Soccer",
-          "quote": "Dr. Patel made coding fun by showing me how to analyze my game stats. Now I love both programming and data!"
+          "student": "Jennifer L., Swimming",
+          "quote": "Matt helped me master calculus while training 6 hours a day. His flexible scheduling saved my GPA!"
         }
       ]
     }
