@@ -31,7 +31,51 @@
           "quote": "Cooch was great! I missed school while training abroad and was able to schedule a late night session with him."
         }
       ]
+    },
+    { 
+      "id": "Jeremy",
+      "name": "Jeremy J",
+      "title": "B.S. in Mathematics",
+      "subjects": ["Mathematics"],
+      "specialties": [ "Statistics", "Algebra I- II", "Pre-Calc", "Geometry"],
+      "bio": "Jeremy Jakob currently teaches math at the Winter Sports School during the summer and coaches for Park City Ski & Snowboard during the ski season. A former ski racer on the Park City Ski Team and alumnus of the WSS, Jeremy went on to earn a degree in Mathematics from the University of Utah. Equally passionate about academics and sport, he believes true excellence comes from pursuing both without compromising one for the other. Through Athletic Minds, Jeremy’s goal is to empower athletes, helping them to reach their athletic dreams while also achieving their academic goals.",
+      "experience": "8 years",
+      "education": [
+        "BS Mathematics - University of Utah"
+      ],
+      "athletic_background": "FIS Alpine Ski Racer",
+      "image": "assets/images/tutors/JeremyJ.png",
+      "calendarId": "jjacob@athleticmindstutoring.com",
+      "availability": {
+        "timezone": "MST",
+        "travel_available": false,
+        "online_sessions": true
+      },
+      "languages": ["English"]
+    },
+    {
+      "id": "Valeria",
+      "name": "Valeria S",
+      "title": "M.S. in Statistics, B.S. in Pure Mathematics & Physics",
+      "subjects": ["Mathematics", "Physics"],
+      "specialties": [ "Statistics", "Algebra I- II", "Pre-Calc", "Geometry"],
+      "bio": "",
+      "experience": "5 years",
+      "education": [
+        "MS in Statistics - University of Utah",
+        "BS in Pure Mathematics - Westminster University",
+        "BS in Physics - Westminster University"
+      ],
+      "athletic_background": "FIS Alpine Ski Racer",
+      "image": "assets/images/tutors/Valeria.jpg",
+      "calendarId": "jjacob@athleticmindstutoring.com",
+      "availability": {
+        "timezone": "MST",
+        "travel_available": false,
+        "online_sessions": true
+      },
+      "languages": ["English", "Italian"]
     }
-    
   ]
+  
 }

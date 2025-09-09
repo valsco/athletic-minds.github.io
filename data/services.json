@@ -52,7 +52,7 @@
       "id": "all-subjects",
       "icon": "📚",
       "title": "All Subjects",
-      "description": "From math and science to literature and foreign languages, we cover all academic areas.",
+      "description": "From math and science to foreign languages, we cover most academic areas.",
       "benefits": [
         "STEM subjects (Math, Science, Engineering)",
         "Humanities (English, History, Languages)",
@@ -75,7 +75,7 @@
   ],
   "detailed_services": [
     {
-      "id": "travel-tutoring-detailed",
+       "id": "travel-tutoring-detailed",
       "title": "Travel Tutoring",
       "subtitle": "Education That Goes Where You Go",
       "description": "Our tutors accompany your team on training camps, tournaments, and competitions. We set up mobile learning environments wherever you are, ensuring your education never takes a back seat to your sport.",
@@ -87,11 +87,6 @@
         "WiFi hotspot and tech support",
         "Quiet study spaces arranged"
       ],
-      "pricing": {
-        "daily_rate": "$300-500",
-        "includes": "8 hours of availability, materials, travel expenses within 50 miles",
-        "additional": "Longer distances and overnight stays quoted separately"
-      },
       "ideal_for": [
         "Training camps lasting 3+ days",
         "Tournament travel",
@@ -112,11 +107,6 @@
         "Make-up exam coordination",
         "Academic integrity compliance"
       ],
-      "pricing": {
-        "hourly_rate": "$75-100",
-        "includes": "Exam setup, proctoring, secure transmission of results",
-        "minimum": "2-hour minimum per session"
-      },
       "requirements": [
         "48-hour advance notice minimum",
         "School partnership agreement",
@@ -140,12 +130,6 @@
         "standard_hours": "6:00 AM - 11:00 PM",
         "response_time": "Within 1 hour during business hours",
         "booking_window": "Up to 6 months in advance"
-      },
-      "pricing": {
-        "standard_rate": "Regular tutoring rates apply",
-        "rush_fee": "$25 for same-day booking",
-        "early_morning": "6:00-7:00 AM - No additional fee",
-        "late_evening": "After 10:00 PM - $15 surcharge"
       }
     },
     {
@@ -231,29 +215,6 @@
       }
     }
   ],
-  "pricing": {
-    "individual_tutoring": {
-      "standard_rate": "$75-100 per hour",
-      "premium_subjects": "$85-120 per hour",
-      "travel_surcharge": "$25-50 depending on distance"
-    },
-    "group_tutoring": {
-      "small_group": "$40 per student per hour",
-      "large_group": "$30 per student per hour",
-      "team_packages": "Custom pricing available"
-    },
-    "specialized_services": {
-      "exam_proctoring": "$75-100 per session",
-      "travel_tutoring": "$300-500 per day",
-      "college_prep": "$50-75 per hour",
-      "test_prep": "$60-80 per hour"
-    },
-    "package_deals": {
-      "monthly_unlimited": "$800-1200 per month",
-      "semester_package": "$2400-3600 per semester",
-      "annual_program": "$4800-7200 per year"
-    }
-  },
   "guarantees": [
     "Grade improvement within 30 days or money back",
     "100% satisfaction guarantee",
