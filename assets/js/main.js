@@ -661,7 +661,7 @@ async function loadServices() {
                     description: 'Trusted relationships with schools allow our tutors to proctor exams and serve as official academic liaisons.'
                 },
                 {
-                    icon: '🎯',
+                    icon: '🔭',
                     title: 'Specialized Focus',
                     description: 'We understand the unique challenges student athletes face and tailor our approach accordingly.'
                 },

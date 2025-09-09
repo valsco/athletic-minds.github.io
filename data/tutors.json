@@ -2,37 +2,36 @@
   "tutors": [
     {
       "id": "Matt-couch",
-      "name": "Matthew Couture",
+      "name": "Matthew C.",
       "title": "B.S. in Applied Mathematics & Physics",
-      "subjects": ["Mathematics", "Physics", "Chemistry", "Biology"],
-      "specialties": ["Calculus", "Statistics", "Applied Physics", "Engineering Mechanics"],
-      "bio": "Former Division III track athlete with PhD in Applied Mathematics. Specializes in STEM subjects for student athletes. Dr. Chen understands the demanding schedule of competitive athletics and has developed unique teaching methods that work around training schedules.",
-      "experience": "12 years",
+      "subjects": ["Mathematics", "Physics", "Chemistry"],
+      "specialties": ["Calculus", "Statistics", "Applied Physics", "Engineering Mechanics", "Thermodynamics"],
+      "bio": "Former USCSA athlete with Bachelor in Applied Mathematics and Physics. Specializes in STEM subjects for student athletes. Matt (Cooch) understands the demanding schedule of competitive athletics and has developed unique teaching methods that work around training and competition schedules.",
+      "experience": "15 years",
       "education": [
         "BS Physics - Westminster University",
-        "BS Mathematics -Castleton "
+        "BS Mathematics - Castleton University "
       ],
-      "athletic_background": "Division I Track & Field (400m hurdles)",
+      "athletic_background": "Division III Ski Racing",
       "image": "assets/images/tutors/cooch.jpg",
       "calendarId": "mcoucher@athleticmindstutoring.com",
       "availability": {
-        "timezone": "EST",
-        "preferred_hours": "6:00-22:00",
+        "timezone": "MST",
         "travel_available": true,
         "online_sessions": true
-      },
-      "rates": {
-        "individual": 85,
-        "group": 120,
-        "travel": 150
       },
       "languages": ["English"],
       "testimonials": [
         {
-          "student": "Jennifer L., Swimming",
-          "quote": "Matt helped me master calculus while training 6 hours a day. His flexible scheduling saved my GPA!"
+          "student": "Caroline P., Skiier",
+          "quote": "Matt helped me master chemistry while balacing off season dryland. His flexible scheduling saved my GPA!"
+        },
+        {
+          "student": "Zeke S., Skiier",
+          "quote": "Cooch was great! I missed school while training abroad and was able to schedule a late night session with him."
         }
       ]
     }
+    
   ]
 }
