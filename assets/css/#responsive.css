@@ -104,8 +104,14 @@
     }
     
     .feature-card,
+    .tutor-card,
     .service-card {
         margin: 0 10px;
+    }
+    
+    .tutor-image {
+        height: 200px;
+        font-size: 3rem;
     }
     
     .about-content {
@@ -115,46 +121,6 @@
     
     .about-content p {
         font-size: 1rem;
-    }
-    
-    /* Tutor Card Mobile Styles */
-    .tutor-card-container {
-        height: 450px;
-    }
-    
-    .tutor-card-container.expanded {
-        width: 95vw;
-        height: 95vh;
-        max-height: none;
-    }
-    
-    .card-back {
-        padding: 15px;
-    }
-    
-    .tutor-card-container.expanded .card-back {
-        padding: 20px;
-    }
-    
-    .subjects-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .rates-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .availability-badges {
-        justify-content: flex-start;
-    }
-    
-    .back-header h3 {
-        font-size: 1.1em;
-    }
-    
-    .info-section h4 {
-        font-size: 1em;
     }
 }
 
@@ -196,6 +162,14 @@
         padding: 1.5rem;
     }
     
+    .tutor-info {
+        padding: 1rem;
+    }
+    
+    .tutor-name {
+        font-size: 1.1rem;
+    }
+    
     .contact-form,
     .testimonial {
         padding: 1.5rem;
@@ -210,21 +184,6 @@
     .book-button {
         padding: 10px 20px;
         font-size: 0.9rem;
-    }
-    
-    /* Small Mobile Tutor Card Styles */
-    .tutor-card-container.expanded .card-back {
-        padding: 15px;
-    }
-    
-    .back-header {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-    
-    .back-button {
-        align-self: flex-start;
     }
 }
 
@@ -267,6 +226,10 @@
         margin-top: 0;
     }
     
+    .page:not(.active) {
+        display: none;
+    }
+    
     .cta-button,
     .book-button,
     .submit-button {
@@ -278,16 +241,5 @@
     .hero {
         background: var(--light-gray);
         color: var(--dark-gray);
-    }
-    
-    .card-overlay {
-        display: none;
-    }
-    
-    .tutor-card-container.expanded {
-        position: static;
-        transform: none;
-        width: 100%;
-        height: auto;
     }
 }

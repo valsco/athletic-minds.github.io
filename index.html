@@ -1,31 +1,32 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="google-site-verification" content="ib03Yx3FBzYx9okfjG8EX8eiuUFYat817bAxZgPsVyM" /> -->
     <title>Athletic Minds - Expert Tutoring for Student Athletes</title>
     <meta name="description" content="Specialized tutoring for student athletes with flexible scheduling, travel tutoring, and trusted school partnerships.">
-    <link rel="icon" type="image/x-icon" href="assets/images/logos/Athletic_mindslogo_no_name.svg" fill-opacity="0">
+    <link rel="icon" type="image/x-icon" href="assets/images/logos/Athletic_mindslogo_no_name.svg">
     
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo"> 
-                <img src="assets/images/logos/Athletic_mindslogo_no_name.svg" alt="Athletic Minds Logo" width="40" height="40" fill-opacity="0">
+                <img src="assets/images/logos/Athletic_mindslogo_no_name.svg" alt="Athletic Minds Logo" width="40" height="40">
                 Athletic Minds
             </div>
             <ul class="nav-links">
-                <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
-                <li><a href="#" onclick="showPage('tutors')">Meet Our Tutors</a></li>
-                <li><a href="#" onclick="showPage('services')">Services</a></li>
-                <li><a href="#" onclick="showPage('about')">About</a></li>
-                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="/" class="nav-link active">Home</a></li>
+                <li><a href="/tutors" class="nav-link">Meet Our Tutors</a></li>
+                <li><a href="/services" class="nav-link">Services</a></li>
+                <li><a href="/about" class="nav-link">About</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="mobile-menu">
                 <span></span>
@@ -35,153 +36,8 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Home Page -->
-        <div id="home" class="page active">
-            <section class="hero">
-                <div class="container">
-                    <h1>Excellence in Motion</h1>
-                    <p>Specialized tutoring for student athletes who refuse to compromise on their academic success. We travel with you, adapt to your schedule, and bridge the gap between your athletic commitments and educational goals.</p>
-                    <a href="#" class="cta-button" onclick="showPage('contact')">Get Started Today</a>
-                </div>
-            </section>
-
-            <section class="features">
-                <div class="container">
-                    <h2 class="section-title">Why Choose Athletic Minds?</h2>
-                    <div class="features-grid" id="features-container">
-                        <!-- Features will be loaded dynamically from data/services.json -->
-                    </div>
-                </div>
-            </section>
-
-            <section class="success-stories">
-                <div class="container">
-                    <h2 class="section-title">Success Stories</h2>
-                    <div class="testimonials-grid" id="testimonials-container">
-                        <!-- Testimonials will be loaded dynamically from data/testimonials.json -->
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Tutors Page -->
-        <div id="tutors" class="page">
-            <section style="padding: 80px 0;">
-                <div class="container">
-                    <h2 class="section-title">Meet Our Expert Tutors</h2>
-                    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem;">
-                        Our tutors are more than educators - they're academic athletes who understand the demands of balancing sports and studies. Each brings specialized expertise and a passion for helping student athletes succeed.
-                    </p>
-                    <div class="tutors-grid" id="tutors-container">
-                        <!-- Tutors will be loaded dynamically from data/tutors.json -->
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Services Page -->
-        <div id="services" class="page">
-            <section style="padding: 80px 0;">
-                <div class="container">
-                    <h2 class="section-title">Our Services</h2>
-                    <div class="services-grid" id="detailed-services-container">
-                        <!-- Detailed services will be loaded dynamically from data/services.json -->
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- About Page -->
-        <div id="about" class="page">
-            <section style="padding: 80px 0;">
-                <div class="container">
-                    <h2 class="section-title">About Athletic Minds</h2>
-                    <div class="about-content">
-                        <p>Athletic Minds was born from a simple recognition: student athletes face unique challenges that traditional tutoring services simply can't address. Founded by former student athletes who understand the demanding balance between sports and academics, we've created a revolutionary approach to educational support.</p>
-                        
-                        <p>Our mission is to ensure that no student athlete has to choose between pursuing their athletic dreams and achieving academic excellence. We believe that with the right support, flexibility, and understanding, every student athlete can succeed in both arenas.</p>
-                        
-                        <p>What sets us apart is our deep understanding of the athletic world combined with educational expertise. Our tutors aren't just subject matter experts – they're individuals who have walked in your shoes, who understand the pressure of early morning practices, late-night games, and the constant travel that comes with competitive sports.</p>
-                        
-                        <p>Through partnerships with schools, we've built a network of trust that allows us to serve as true academic advocates for our students. When you work with Athletic Minds, you're not just getting a tutor – you're getting a dedicated academic team that travels with you, adapts to your schedule, and ensures your educational goals are never sidelined.</p>
-                        
-                    <section style="padding: 80px 0;"> </section>
-                        <h2  class="section-title">About the Fouders</h2>        
-                         <div class="about-founders-content">
-                            <p><strong> Matt:</strong> I was a ski racer my whole life</p>
-                            <p><strong> Jeremy:</strong> I am a teacher ... </p>
-
-                        <div style="margin-top: 3rem; padding: 2rem; background: var(--light-gray); border-radius: 15px;">
-                            <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">Our Core Values</h3>
-                            <p><strong>Flexibility:</strong> We adapt to your schedule, not the other way around.</p>
-                            <p><strong>Excellence:</strong> We maintain the highest standards in both academics and service.</p>
-                            <p><strong>Understanding:</strong> We know what it's like to be a student athlete.</p>
-                            <p><strong>Partnership:</strong> We work with schools to ensure seamless academic support.</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Contact Page -->
-
- <div id="contact" class="page">
-            <section style="padding: 80px 0;">
-                <div class="container">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <div class="contact-content">
-                        <div class="contact-form">
-                            <h3>Start Your Journey</h3>
-                            <form id="contact-form">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="sport">Sport/Activity</label>
-                                    <input type="text" id="sport" name="sport" placeholder="e.g., Basketball, Swimming, Track">
-                                </div>
-                                <div class="form-group">
-                                    <label for="grade">Grade Level</label>
-                                    <input type="text" id="grade" name="grade" placeholder="e.g., 11th Grade, College Freshman">
-                                </div>
-                                <div class="form-group">
-                                    <label for="subjects">Subjects Needed</label>
-                                    <input type="text" id="subjects" name="subjects" placeholder="e.g., Math, Science, English">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Tell us about your needs</label>
-                                    <textarea id="message" name="message" rows="4" placeholder="Describe your schedule, travel requirements, or specific academic challenges..."></textarea>
-                                </div>
-                                <button type="submit" class="submit-button">Send Message</button>
-                            </form>
-                        </div>
-                        <div class="contact-info">
-                            <h3>Contact Information</h3>
-                            <p><strong>Email:</strong> info@athleticmindstutoring.com</p>
-                            <p><strong>Hours:</strong> Available 7 days a week to match your training schedule</p>
-                            
-                            <h3 style="margin-top: 2rem;">Our Locations</h3>
-                            <p>We serve student athletes nationwide, with hub offices in:</p>
-                            <ul style="margin-left: 1rem; margin-top: 1rem;">
-                                <li>Salt Lake City, UT</li>
-                            </ul>
-                            
-                            <div style="margin-top: 2rem; padding: 1rem; background: var(--light-gray); border-radius: 8px;">
-                                <strong>Quick Response Guarantee:</strong> We respond to all inquiries within 4 hours, because we know your schedule doesn't wait.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        
+    <main id="main-content">
+        <!-- Content will be loaded dynamically -->
     </main>
 
     <footer>
@@ -191,6 +47,7 @@
     </footer>
 
     <!-- JavaScript Files -->
+    <script src="assets/js/router.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/booking.js"></script>
     <script src="assets/js/contact-form.js"></script>
