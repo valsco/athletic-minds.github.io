@@ -132,13 +132,15 @@ main {
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
+    --lift: -2px;
+    --shadow: 0 10px 30px rgba(255,107,53,0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cta-button:hover {
+/* .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
-}
+} */
 
 /* Sections */
 .features {
@@ -170,12 +172,14 @@ main {
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    --lift: -10px;
+    --shadow: none;
     transition: transform 0.3s ease;
 }
 
-.feature-card:hover {
-    transform: translateY(-10px);
-}
+/* .feature-card:hover {
+    transform: translateY(-50px);
+} */
 
 .feature-icon {
     font-size: 3rem;
@@ -225,9 +229,9 @@ main {
 
 /* Tutors Page */
 /* Tutor Card Container */
-.tutor-card-container:hover {
-    transform: translateY(-5px);
-}
+/* .tutor-card-container:hover {
+    transform: translateY(-10px);
+} */
 
 /* Tutors Page Card */
 .tutors-grid {
@@ -257,6 +261,8 @@ main {
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
+    --lift: -10px;
+
     }
 
 .tutor-card.flipped {
@@ -362,22 +368,27 @@ main {
 .view-details-button {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-}
+    --lift: -2px;
+    --shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 
+}
+/* 
 .view-details-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-}
+} */
 
 .book-button {
     background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
     color: white;
+    --lift: -2px;
+    --shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
 }
 
-.book-button:hover {
+/* .book-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
-}
+} */
 
 /* Back Card Styles */
 .back-header {
@@ -580,7 +591,7 @@ main {
     gap: 15px;
 }
 
-.testimonial {
+.testimonial_extended {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-left: 4px solid #3498db;
     margin: 0;
@@ -597,7 +608,7 @@ main {
     margin-bottom: 10px;
 }
 
-.testimonial cite {
+.testimonial_extended cite {
     display: block;
     text-align: right;
     font-style: normal;
@@ -644,6 +655,8 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    /* --lift: -3px;
+    --shadow:  0 10px 30px rgba(255, 107, 107, 0.4); */
 }
 
 .book-button-large:hover {
@@ -652,7 +665,7 @@ main {
 }
 
 /* Responsive Design for Modal */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .tutor-card-container.expanded {
         position: fixed;
         inset: 0;              
@@ -691,9 +704,9 @@ main {
     .info-section h4 {
         font-size: 1em;
     }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .tutor-card-container.expanded .card-back {
         padding: 15px;
     }
@@ -707,10 +720,10 @@ main {
     .back-button {
         align-self: flex-start;
     }
-}
+} */
 
 /* Animation Classes */
-.animate-fade-in {
+/* .animate-fade-in {
     opacity: 0;
     animation: fadeIn 0.6s ease forwards;
 }
@@ -718,21 +731,21 @@ main {
 .animate-delay-1 { animation-delay: 0.1s; }
 .animate-delay-2 { animation-delay: 0.2s; }
 .animate-delay-3 { animation-delay: 0.3s; }
-.animate-delay-4 { animation-delay: 0.4s; }
+.animate-delay-4 { animation-delay: 0.4s; } */
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     to {
         opacity: 1;
     }
-}
+} */
 
 /* Button Ripple Effect */
-.button-ripple {
+/* .button-ripple {
     position: relative;
     overflow: hidden;
-}
+} */
 
-.button-ripple:active::after {
+/* .button-ripple:active::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -743,17 +756,17 @@ main {
     background: rgba(255, 255, 255, 0.3);
     transform: translate(-50%, -50%);
     animation: ripple 0.6s ease-out;
-}
+} */
 
-@keyframes ripple {
+/* @keyframes ripple {
     to {
         width: 200px;
         height: 200px;
     }
-}
+} */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .tutor-card-container {
         height: 450px;
     }
@@ -773,7 +786,7 @@ main {
     .availability-badges {
         justify-content: center;
     }
-}
+} */
 /* 
 .tutors-grid {
     display: grid;
