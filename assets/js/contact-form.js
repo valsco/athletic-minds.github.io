@@ -217,7 +217,6 @@ function showErrorMessage(message) {
                 
                 <div class="alternative-contact">
                     <h4>Alternative Ways to Reach Us</h4>
-                    <p>📞 Phone: <a href="tel:5551236463">(555) 123-MIND</a></p>
                     <p>📧 Email: <a href="mailto:info@athleticmindstutoring.com">info@athleticmindstutoring.com</a></p>
                 </div>
             </div>
