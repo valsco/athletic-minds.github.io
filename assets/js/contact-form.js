@@ -1,10 +1,9 @@
 // Athletic Minds - Contact Form Handler
 
-// // Initialize contact form when DOM is ready
-// document.addEventListener('DOMContentLoaded', function() {
-//     initializeContactForm();
-// });
-
+document.addEventListener("DOMContentLoaded", () => {
+  // Try once on initial load (won’t hurt if contact page isn’t visible yet)
+  initializeContactForm();
+});
 
 
 function initializeContactForm() {
@@ -65,6 +64,8 @@ function handleContactFormSubmission(e) {
                 spinnerEl.remove();
             }
         });
+    console.log("Submitting contact form", data);
+
 }
 
 function validateContactForm(data) {
@@ -161,25 +162,20 @@ function clearFieldError(e) {
 }
 
 async function processContactForm(data) {
-    // Simulate form processing delay
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // In a real implementation, this would:
-    // 1. Send data to your server
-    // 2. Save to database
-    // 3. Send confirmation email to user
-    // 4. Send notification email to Athletic Minds team
-    // 5. Integrate with CRM system
-    // 6. Send auto-responder email
-    
-    console.log('Contact form submission:', data);
-    
-    // For now, we'll simulate success/failure
-    if (Math.random() > 0.1) { // 90% success rate
-        return { success: true, message: 'Form submitted successfully' };
-    } else {
-        throw new Error('Network error. Please try again.');
-    }
+  const res = await fetch("https://athletic-minds-worker.valeria-scopello.workers.dev/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  const out = await res.json().catch(() => ({}));
+
+
+  if (!res.ok) {
+    throw new Error(out.error || "Failed to send message.");
+  }
+
+  return out;
 }
 
 function showSuccessMessage() {
