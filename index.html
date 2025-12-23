@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +6,16 @@
     <title>Athletic Minds - Expert Tutoring for Student Athletes</title>
     <meta name="description" content="Specialized tutoring for student athletes with flexible scheduling, travel tutoring, and trusted school partnerships.">
     <link rel="icon" type="image/x-icon" href="assets/images/logos/Athletic_mindslogo_no_name.svg">
+    <script>
+  // Check if we were redirected from 404.html
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect !== location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
     
     <!-- CSS Files -->
     
