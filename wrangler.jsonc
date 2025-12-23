@@ -1,0 +1,5 @@
+{
+  "name": "athletic-minds-worker",
+  "compatibility_date": "2025-12-23",
+  "main": "src/index.js"
+}
