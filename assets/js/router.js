@@ -50,6 +50,12 @@ class Router {
         try {
             // Show loading state
             this.mainContent.innerHTML = '<div class="content-loader"><div class="loading-spinner"></div>Loading...</div>';
+            
+            // close mobile menu after navigation
+            window.UI?.closeMobileMenu();
+
+            // enhance behavior for newly injected DOM
+            window.UI?.enhanceNewContent(this.mainContent);
 
             // Fetch page content
             const response = await fetch(this.routes[path]);
@@ -166,7 +172,7 @@ class Router {
             
             if (container && data.features) {
                 container.innerHTML = data.features.map(feature => `
-                    <div class="feature-card animate-fade-in">
+                    <div class="feature-card hover-lift animate-fade-in">
                         <div class="feature-icon">${feature.icon}</div>
                         <h3>${feature.title}</h3>
                         <p>${feature.description}</p>
@@ -205,7 +211,7 @@ class Router {
             
             if (container && data.tutors) {
                 container.innerHTML = data.tutors.map((tutor, index) => `
-                    <div class="tutor-card-container animate-fade-in animate-delay-${(index % 4) + 1}" data-tutor-id="${tutor.id}">
+                    <div class="tutor-card-container hover-lift animate-fade-in animate-delay-${(index % 4) + 1}" data-tutor-id="${tutor.id}">
                         <div class="tutor-card">
                             <div class="card-front">
                                 <div class="tutor-image">
@@ -216,8 +222,8 @@ class Router {
                                     <p class="tutor-title">${tutor.title}</p>
                                     <p class="tutor-subjects">${tutor.subjects.join(', ')}</p>
                                     <p class="tutor-bio-preview">${tutor.bio.substring(0, 100)}...</p>
-                                    <button class="view-details-button button-ripple">View Details</button>
-                                    <button class="book-button button-ripple">Book Session</button>
+                                    <button class="view-details-button hover-lift button-ripple">View Details</button>
+                                    <button class="book-button hover-lift button-ripple">Book Session</button>
                                 </div>
                             </div>
                             <div class="card-back">
@@ -303,7 +309,7 @@ class Router {
                                     ` : ''}
                                 </div>
                                 <div class="back-actions">
-                                    <button class="book-button-large button-ripple">Book a Session</button>
+                                    <button class="book-button-large hover-lift button-ripple">Book a Session</button>
                                 </div>
                             </div>
                         </div>

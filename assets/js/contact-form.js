@@ -1,9 +1,11 @@
 // Athletic Minds - Contact Form Handler
 
-// Initialize contact form when DOM is ready
-document.addEventListener('DOMContentLoaded', function() {
-    initializeContactForm();
-});
+// // Initialize contact form when DOM is ready
+// document.addEventListener('DOMContentLoaded', function() {
+//     initializeContactForm();
+// });
+
+
 
 function initializeContactForm() {
     const contactForm = document.getElementById('contact-form');
@@ -815,3 +817,5 @@ function addContactFormStyles() {
 // Initialize styles when script loads
 addContactFormStyles();
     
+
+window.initContactForm = initializeContactForm;

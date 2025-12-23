@@ -175,7 +175,7 @@
 /* Page Transition Animations */
 .page-transition-enter {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(0);
 }
 
 .page-transition-enter-active {
@@ -197,12 +197,14 @@
 
 /* Hover Animations */
 .hover-lift {
+    --lift: -5px;
+    --shadow: 0 15px 35px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-lift:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(var(--lift));
+  box-shadow: var(--shadow);
 }
 
 .hover-scale {
@@ -287,7 +289,9 @@
 
 /* Mobile Menu Animation */
 .mobile-menu.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 28px;
 }
 
 .mobile-menu.active span:nth-child(2) {
@@ -295,13 +299,15 @@
 }
 
 .mobile-menu.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    width: 28px;
 }
 
 /* Scroll Reveal Animations */
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
