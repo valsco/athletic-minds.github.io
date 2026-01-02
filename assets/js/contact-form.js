@@ -184,7 +184,7 @@ function showSuccessMessage() {
         content: `
             <div class="success-content">
                 <div class="success-icon">🎉</div>
-                <p>Thank you for contacting Athletic Minds! We've received your message and will respond within 4 hours.</p>
+                <p>Thank you for contacting Athletic Minds! We've received your message and will respond within 24 hours.</p>
                 
                 <div class="next-steps">
                     <h4>What happens next?</h4>
