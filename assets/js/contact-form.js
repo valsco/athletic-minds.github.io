@@ -474,6 +474,15 @@ function addFieldSuggestions() {
         ];
         addDatalist(gradeField, 'grades-list', gradeLevels);
     }
+
+    // Add tutor suggestions
+    const tutorField = document.getElementById('tutor');
+    if (tutorField) {
+        const tutorOptions = [
+            'Matt C.', 'Jeremy J.', 'Valeria S.", "No Preference', "First Available"
+        ];
+        addDatalist(tutorField, 'tutors-list', tutorOptions);
+    }
     
     // Add subject suggestions
     const subjectsField = document.getElementById('subjects');
