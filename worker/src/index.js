@@ -67,6 +67,7 @@ export default {
     const message = (data.message || "").trim();
     const sport = (data.sport || "").trim();
     const grade = (data.grade || "").trim();
+    const tutor = (data.tutor || "").trim();
     const subjects = (data.subjects || "").trim();
 
     if (!email || !message) {
@@ -84,13 +85,14 @@ export default {
         from: "Athletic Minds <noreply@athleticmindstutoring.com>",
         to: ["info@athleticmindstutoring.com"],
         reply_to: email,
-        subject: "New Contact Form Submission",
+        subject: `Inquiry ${new Date().toLocaleDateString()} | client ${escapeHtml(name)} | Tutor: ${escapeHtml(tutor)}`,
         html: `
           <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${escapeHtml(name)}</p>
           <p><strong>Email:</strong> ${escapeHtml(email)}</p>
           <p><strong>Sport:</strong> ${escapeHtml(sport)}</p>
           <p><strong>Grade:</strong> ${escapeHtml(grade)}</p>
+           <p><strong>Tutor Preference:</strong> ${escapeHtml(tutor)}</p>
           <p><strong>Subjects:</strong> ${escapeHtml(subjects)}</p>
           <p><strong>Message:</strong></p>
           <pre style="white-space:pre-wrap;">${escapeHtml(message)}</pre>
