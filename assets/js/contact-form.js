@@ -79,6 +79,10 @@ function validateContactForm(data) {
     if (!data.email || !isValidEmail(data.email)) {
         errors.push({ field: 'email', message: 'Please enter a valid email address' });
     }
+
+    if (!data.subjects || data.name.trim().length < 2) {
+        errors.push({ field: 'subjects', message: 'Please enter at least one subject' });
+    }
     
     if (!data.message || data.message.trim().length < 10) {
         errors.push({ field: 'message', message: 'Please provide more details about your needs (at least 10 characters)' });
@@ -479,7 +483,7 @@ function addFieldSuggestions() {
     const tutorField = document.getElementById('tutor');
     if (tutorField) {
         const tutorOptions = [
-            'Matt C.', 'Jeremy J.', 'Valeria S.", "No Preference', "First Available"
+            'Matt C.', 'Jeremy J.', 'Valeria S.', 'No Preference', 'First Available'
         ];
         addDatalist(tutorField, 'tutors-list', tutorOptions);
     }
