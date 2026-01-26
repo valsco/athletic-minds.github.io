@@ -85,7 +85,7 @@ export default {
         from: "Athletic Minds <noreply@athleticmindstutoring.com>",
         to: ["info@athleticmindstutoring.com"],
         reply_to: email,
-        subject: `Inquiry ${new Date().toLocaleDateString()} | client ${escapeHtml(name)} | Tutor: ${escapeHtml(tutor)}`,
+        subject: `Inquiry ${new Date().toLocaleDateString()} | Client: ${escapeHtml(name)}, ${escapeHtml(email)} | Tutor Preference: ${escapeHtml(tutor)}`,
         html: `
           <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${escapeHtml(name)}</p>

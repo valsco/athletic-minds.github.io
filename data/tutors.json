@@ -23,12 +23,12 @@
       "languages": ["English"],
       "testimonials": [
         {
-          "student": "Caroline P., Skiier",
-          "quote": "Matt helped me master chemistry while balacing off season dryland. His flexible scheduling saved my GPA!"
+          "author": "Caroline P., Skiier",
+          "content": "Matt helped me master chemistry while balacing off season dryland. His flexible scheduling saved my GPA!"
         },
         {
-          "student": "Zeke S., Skiier",
-          "quote": "Cooch was great! I missed school while training abroad and was able to schedule a late night session with him."
+          "author": "Zeke S., Skiier",
+          "content": "Cooch was great! I missed school while training abroad and was able to schedule a late night session with him."
         }
       ]
     },

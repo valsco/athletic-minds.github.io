@@ -1,52 +1,48 @@
 {
   "testimonials": [
     {
-      "id": "sarah-swimmer",
-      "content": "Athletic Minds made it possible for me to maintain my 4.0 GPA while training for nationals. Their tutor traveled with our team and helped me stay on top of my calculus coursework even during the most intense training periods. The flexibility was incredible!",
-      "author": "Sarah M.",
-      "sport": "Division I Swimming",
-      "school": "University of Florida",
+      "id": "emily-parent",
+      "content": "As a parent, I couldn't be happier with our experience working with Cooch. He is extremely professional, reliable, and flexible with my daughter's busy schedule. He is always willing to give extra time when needed and truly cares about her success. What stands out most is that I never have to convince my daughter to attend her tutoring sessions—she actually asks for them. That says everything. Thank you, Cooch, for making such a positive impact and for being such a dedicated tutor.",
+      "author": "Emily O",
+      "title": "Parent",
       "subject": "Mathematics",
-      "tutor": "Dr. Michael Chen",
-      "image": "assets/images/testimonials/sarah-swimmer.jpg",
+      "tutor": "Matt",
+      "image": "",
       "rating": 5,
-      "date": "2024-11-15",
-      "achievement": "Maintained 4.0 GPA while qualifying for NCAA Championships"
+      "date": "2026-01-17",
+      "achievement": ""
     },
     {
-      "id": "dr-johnson-advisor",
-      "content": "The partnership between Athletic Minds and our school has been invaluable. Their tutors understand our students' unique needs and maintain excellent communication with our academic staff. We've seen remarkable improvements in our student athletes' academic performance.",
-      "author": "Dr. Lisa Johnson",
-      "title": "Academic Advisor",
-      "school": "University of Southern California",
-      "image": "assets/images/testimonials/dr-johnson.jpg",
+      "id": "hailey",
+      "content": "When I started working with Cooch, I had a C in math. After tutoring with him, I quickly raised my grade to an A and have kept an A ever since. Cooch is easy to talk to and makes it comfortable to ask questions or speak up when something doesn’t make sense. My favorite thing about working with him is that he explains problems in multiple ways and keeps going until he finds one that makes sense to me. This has helped me really understand math instead of just memorizing steps and has made me feel more comfortable in my math class.",
+      "author": "Hailey",
+      "title": "Student",
+      "sport": "Soccer",
+      "subject": "Mathematics",
+      "school": "Park City High School",
+      "image": "",
       "rating": 5,
-      "date": "2024-12-03",
-      "type": "school_official"
+      "date": "2025-12-03",
+      "type": ""
     },
     {
-      "id": "marcus-tennis",
-      "content": "I never thought I could balance pre-med requirements with competitive tennis. Athletic Minds proved me wrong. Their flexible scheduling and travel tutoring kept me on track for medical school. Dr. Rodriguez was a game-changer!",
-      "author": "Marcus R.",
-      "sport": "Division I Tennis",
-      "school": "Stanford University",
-      "subject": "Pre-Medical Studies",
-      "tutor": "Dr. James Rodriguez",
-      "image": "assets/images/testimonials/marcus-tennis.jpg",
+      "id": "zeke",
+      "content": "Not only is Matt very easy to work with he cares so much about your understanding of the details in each subject. He uses great teaching skills to make sure you have everything down. Overall every session with Matt flows very nicely.",
+      "author": "Zeke",
+      "sport": "Alpine ski racing",
+      "school": "Winter school",
+      "subject": "Chemistry",
+      "tutor": "Matt",
+      "image": "",
       "rating": 5,
       "date": "2024-10-22",
-      "achievement": "Accepted to 3 top medical schools"
-    },
-    {
-      "id": "coach-martinez",
-      "content": "Athletic Minds has been a godsend for our team. When we travel for tournaments, having a tutor with us means our players never fall behind academically. The peace of mind for both players and parents is priceless.",
-      "author": "Coach Maria Martinez",
-      "title": "Head Basketball Coach",
-      "school": "Duke University",
-      "image": "assets/images/testimonials/coach-martinez.jpg",
-      "rating": 5,
-      "date": "2024-11-28",
-      "type": "coach"
+      "achievement": ""
     }
   ]
 }
+
+
+
+
+
+
