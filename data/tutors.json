@@ -16,6 +16,8 @@
       "image": "assets/images/tutors/cooch.jpg",
       "calendarId": "mcoucher@athleticmindstutoring.com",
       "availability": {
+        "days": "Upon request",
+        "times" : "Flexible",
         "timezone": "MST",
         "travel_available": true,
         "online_sessions": true
@@ -47,6 +49,8 @@
       "image": "assets/images/tutors/JeremyJ.png",
       "calendarId": "jjacob@athleticmindstutoring.com",
       "availability": {
+        "days": "Upon request",
+        "times" : "Flexible",
         "timezone": "MST",
         "travel_available": false,
         "online_sessions": true
@@ -56,12 +60,13 @@
     {
       "id": "Valeria",
       "name": "Valeria S",
-      "title": "M.S. in Statistics, B.S. in Pure Mathematics & Physics",
+      "title": "Ph.D. in Mahtematics, M.S. in Statistics, B.S. in Pure Mathematics & Physics",
       "subjects": ["Mathematics", "Physics"],
-      "specialties": [ "Statistics", "Algebra I- II", "Pre-Calc", "Geometry"],
-      "bio": "",
+      "specialties": [ "Statistics", "Calculus", "Geometry", "Modern Algebra"],
+      "bio": "PhD Candidate in Mathematics. Learning doesn't have to be stressful. I work one-on-one with students to make difficult material easier to understand and more engaging. My goal is to help students feel confident, capable, and motivated every step of the way.",
       "experience": "5 years",
       "education": [
+        "PhD in Mathematics - University of Utah",
         "MS in Statistics - University of Utah",
         "BS in Pure Mathematics - Westminster University",
         "BS in Physics - Westminster University"
@@ -70,6 +75,8 @@
       "image": "assets/images/tutors/Valeria.jpg",
       "calendarId": "vscopello@athleticmindstutoring.com",
       "availability": {
+        "days": "Upon request",
+        "times" : "Flexible",
         "timezone": "MST",
         "travel_available": false,
         "online_sessions": true

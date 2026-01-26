@@ -249,6 +249,12 @@ class Router {
                                                 ${tutor.specialties ? tutor.specialties.map(specialty => `<span class="specialty-tag">${specialty}</span>`).join('') : ''}
                                             </div>
                                         </div>
+                                        <div class="info-section">
+                                            <h4>Language</h4>
+                                            <div class="languages-tags">
+                                                ${tutor.languages.map(language => `<span class="languages-tag">${language}</span>`).join(', ')}
+                                            </div>
+                                        </div>
                                     </div>
                                     ${tutor.education ? `
                                         <div class="info-section education-list">
